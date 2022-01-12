@@ -1,11 +1,11 @@
 import React from "react";
-import { getBottomSpace } from "react-native-iphone-x-helper";
 
 import { HighlightCard } from "../../components/HighlightCard";
 import {
   TransactionCard,
-  TransactionCardProps,
+  TransactionCardProps
 } from "../../components/TransactionCard";
+
 
 import {
   Container,
@@ -102,8 +102,8 @@ export function Dashboard() {
           data={data}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => <TransactionCard data={item} />}
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ paddingBottom: getBottomSpace() }}
+          // showsVerticalScrollIndicator={false}
+          // contentContainerStyle={{ paddingBottom: getBottomSpace() }}
         />
       </Transactions>
     </Container>
